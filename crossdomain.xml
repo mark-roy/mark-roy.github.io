@@ -1,4 +1,7 @@
-<cross-domain-policy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.adobe.com/xml/schemas/PolicyFile.xsd">
-    <site-control permitted-cross-domain-policies="master-only"/>
-    <allow-access-from domain="scratchx.org"/>
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+    <site-control permitted-cross-domain-policies="all"/>
+    <allow-access-from domain="*" secure="false"/>
+    <allow-http-request-headers-from domain="*" headers="*" secure="false"/>
 </cross-domain-policy>
